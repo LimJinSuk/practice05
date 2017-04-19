@@ -14,10 +14,17 @@ public class Sort {
 			System.out.print( array[ i ] + " " );
 		}
 		
-		
-		//
-		// 정렬 알고리즘이 적용된 코드를 여기에 작성합니다.
-		//
+		//n-1*n!
+		for(int i=0; i<array.length; i++){
+			for(int j=i+1; j<array.length; j++){
+				//내림차순
+				if(array[i]<array[j]){
+					temp=array[j];
+					array[j]=array[i];
+					array[i]=temp;
+				}
+			}
+		}
 
 		
 		System.out.println( "\nAfter Sort." );
